@@ -1,13 +1,14 @@
 
 chrome.devtools.panels.create("Flow",
     "MyPanelIcon.png",
-    "Panel.html",
+    null,
     function(panel) {
+    	panel.setExpression("window.document", "rootTitle");
       // code invoked on panel creation
     }
 );
-chrome.devtools.panels.elements.createSidebarPane("My Sidebar",
+chrome.devtools.panels.elements.createSidebarPane("Flow Builder",
     function(sidebar) {
         // sidebar initialization code here
-        sidebar.setObject({ some_data: "Some data to show" });
+         sidebar.setExpression("window.document", "Store");
 });
