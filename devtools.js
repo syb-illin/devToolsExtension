@@ -10,5 +10,5 @@ chrome.devtools.panels.create("Flow",
 chrome.devtools.panels.elements.createSidebarPane("Flow Builder",
     function(sidebar) {
         // sidebar initialization code here
-         sidebar.setExpression("window.document", "Store");
+         sidebar.setExpression("$A.getContext().storeInstance.getCurrentState()", "Store current state");
 });
