@@ -1,26 +1,26 @@
 {
   "name": "Dev tools test",
   "description": "A DevTools extension for inspecting DOM elements",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "devtools_page": "devtools.html",
   "manifest_version": 2,
   "page_action": {
     "default_title": "Flow Builder extra features",
-    "default_icon": {                    // optional
-            "16": "icon.png",           // optional
-            "24": "icon.png",           // optional
-            "32": "icon.png"            // optional
-          }
+    "default_icon": {
+      // optional
+      "16": "icon.png", // optional
+      "24": "icon.png", // optional
+      "32": "icon.png" // optional
+    }
   },
-  "icons": { 
-  			"16": "icon.png",
-           	"48": "icon.png",
-          	"128": "icon128.png" 
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon128.png"
   },
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-  "permissions": [ "declarativeContent" ]
-  
+  "permissions": ["declarativeContent"]
 }
